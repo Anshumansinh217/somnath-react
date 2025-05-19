@@ -1,0 +1,141 @@
+{
+  "our_services": "Our Services",
+  "pooja_booking": "Pooja Booking",
+  "pooja_booking_desc": "Book sacred rituals and poojas easily through our platform.",
+  "live_darshan": "Live Darshan",
+  "live_darshan_desc": "Experience the divine from home with real-time temple darshan.",
+  "temple_events": "Temple Events",
+  "temple_events_desc": "Never miss spiritual gatherings and special events again.",
+  "prasad": "Prasad & Blessings",
+  "prasad_desc": "Receive holy Prasad and blessings at your doorstep.",
+  "astrology": "Astrology Guidance",
+  "astrology_desc": "Consult certified astrologers for spiritual and life advice.",
+  "volunteer": "Volunteer Program",
+  "volunteer_desc": "Join hands with us to serve the divine and the community.",
+  "read_more": "Read More",
+  "we_are_prayer": "We are a Prayer",
+  "we_are_hindu": "We are Hindus who believe in Ram",
+  "prayer_section_desc": "Lorem ipsum dolor sit amet...",
+  "mission_title": "Our Mission & Vision",
+  "celebrate_with_us": "Celebrate with Us",
+  "mission_desc": "Lorem ipsum dolor sit amet...",
+  "sermon": "Watch Our Sermon",
+  "sermon_desc": "Join us to listen to the latest sermon.",
+  "festival": "Join Our Festival",
+  "festival_desc": "Celebrate the divine with our upcoming event.",
+  "volunteer_card": "Volunteer With Us",
+  "volunteer_card_desc": "Be a part of our spiritual mission.",
+  "daily_prayers": "Daily Prayers",
+  "daily_prayers_desc": "Tune in for daily blessings and mantras.",
+  "experience_serenity": "Experience Spiritual Serenity",
+  "temple_intro": "Join us at the holy Shree Somnath Temple...",
+  "contact_us": "Contact Us"
+  ,
+
+    "onlinePooja": "Online Pooja \n Vidhi / Donation",
+    "roomBooking": "Room",
+    "Booking":"Booking",
+    "live": "Live",
+    "Darshan":"Darshan",
+    "online": "Online",
+    "Prashad":"Prashad",
+
+   
+    "news_label": "SOMNATH NEWS:",
+    "news_text": "Only the official website Somnath.org is accepted. Somnath Trust does not accept room bookings or donations via private numbers or UPI..."
+  ,
+ 
+    "titles_jaySomnath": "JAY SOMNATH",
+ 
+  
+    "welcome_title": "Welcome To Shree Somnath Trust",
+    "welcome_text": "Shree Somnath Trust welcomes you to the holy place of the First Aadi jyotirling Shree Somnath Mahadev and the sacred soil where Lord Shri Krishna took his last journey to their Neejdham..."
+,
+
+    "temple_title": "Shree Somnath Temple",
+    "temple_text": "Shree Somnath is first among the twelve Aadi Jyotirlings of India. It has a strategic location on the western coast of India..."
+,
+  "readMore": "Read More...",
+  "quickNav_title": "QUICK NAVIGATION",
+  "quickNav_jaySomnath": "Jay Somnath",
+  "quickNav_somnathDarshan": "Somnath Darshan",
+  "quickNav_liveDarshan": "Somnath Live Darshan",
+  "quickNav_nearestPlaces": "Nearest Places",
+  "quickNav_pilgrimFacilities": "Pilgrim Facilities",
+  "quickNav_festivals": "Festivals",
+  "quickNav_socialActivity": "Social Activity",
+  "quickNav_heritageWalk": "Heritage Walk",
+  "quickNav_templeWalk": "Temple Walk",
+  "quickNav_trustee": "Trustee",
+  "quickNav_ramMandir": "Ram Mandir",
+  "quickNav_faqs": "FAQs"
+  ,
+
+  
+  "eventsAndDarshan": "📅 Events & Darshan",
+  "specialPoojaEvent": "Special Pooja Event",
+  "specialPoojaDesc": "🌟 May 12, 2025 - Special Event at Somnath Temple",
+  "liveDarshan": "Live Darshan",
+  "galleryHeading": "📸 Want To See What's New About Somnath Temple?",
+  "goToGallery": "Go To Gallery",
+  "nearbyHeading": "🗺️ Nearby Visiting Places",
+  "bhalkaTirth": "Bhalka Tirth",
+  "dehotsargTirth": "Dehotsarg Tirth",
+  "prachiTirth": "Prachi Tirth",
+
+
+
+
+  
+  "carousel": {
+  "welcome_title": "Welcome to Somnath",
+  "welcome_desc": "Experience the divine presence of Lord Shiva",
+  "jyotirlinga_title": "Sacred Jyotirlinga",
+  "jyotirlinga_desc": "First among the twelve jyotirlingas",
+  "serenity_title": "Divine Serenity",
+  "serenity_desc": "Find peace at the holy shores",
+  "visual_title": "Divine Moments",
+  "visual_desc": "Feel the presence through visuals"
+},
+"nav": {
+  "home": "Home",
+  "pooja_vidhi": "Pooja Vidhi",
+  "live_darshan": "Live Darshan",
+  "gallery": "Gallery",
+  "events": "Events",
+  "news": "News & Updates",
+  "shop": "Shop",
+  "contact_us": "Contact Us",
+  "Room":"Room"
+}
+,
+"footer": {
+  "about_title": "About Shree Somnath Temple",
+  "about_text": "Shree Somnath Trust welcomes you to the holy place of the Aadi Jyotirling Shree Somnath Mahadev and the sacred soil from where Bhagvan Shri Krishna took his last journey to his neejdham.",
+  "useful_links": "Useful Links",
+  "contact": "Contact",
+  "address": "Somnath, Prabhas Patan, Dist. Gir Somnath-362268",
+  "email": "Email: sompp[at]somnath[dot]org",
+  "phone": "Phone: +91-94282 14914",
+  "links": {
+    "home": "Home",
+    "tender": "Tender",
+    "events": "Events",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "pooja": "Online Pooja Vidhi / Donation",
+    "rooms": "Room Booking",
+    "darshan": "Live Darshan",
+    "prasad": "Online Prashad"
+  }
+  
+}
+
+
+
+
+
+
+}
+
+

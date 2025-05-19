@@ -1,0 +1,17 @@
+.event-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .event-cont{
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  }

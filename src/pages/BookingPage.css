@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
+
+.booking-page {
+  font-family: 'Urbanist', sans-serif;
+  background: url('../img/temple-image/somnath_temple.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3e1f0d; /* deep brown for text */
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.booking-wrapper {
+  max-width: 1100px;
+  background: rgba(255, 248, 230, 0.16); /* light saffron-gold glass effect */
+  border-radius: 20px;
+  padding: 40px;
+  margin: auto;
+  box-shadow: 0 20px 50px rgba(128, 64, 0, 0.3); /* golden glow */
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 204, 128, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: rgba(255, 236, 200, 0.8); /* light golden shade */
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 204, 128, 0.4);
+  box-shadow: inset 0 0 10px rgba(255, 204, 128, 0.2);
+}
+
+.search-toolbar input,
+.search-toolbar button {
+  flex: 1;
+  min-width: 130px;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  color: #5a2d0c;
+  transition: all 0.2s ease;
+}
+
+.search-toolbar input:focus,
+.search-toolbar button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.4);
+  color: #5a2d0c;
+}
+
+.search-toolbar button {
+  background: linear-gradient(135deg, #f6ba60, #ff9933); /* saffron tone */
+  color: #3e1f0d;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.room-card {
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 248, 230, 0.8);
+  border: 1px solid rgba(255, 204, 128, 0.4);
+  box-shadow: 0 10px 30px rgba(128, 64, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(255, 179, 0, 0.2);
+}
+
+.room-card img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 204, 128, 0.3);
+}
+
+.room-card .card-body {
+  padding: 20px;
+}
+
+.room-card .card-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #732e12; /* maroon-brown tone */
+}
+
+.room-card .card-text {
+  font-size: 1.1rem;
+  color: #d48806; /* golden tone */
+}
+
+.room-card ul {
+  padding-left: 18px;
+}
+
+.room-card li {
+  font-size: 0.95rem;
+  color: #5a2d0c;
+}
+
+.room-card input[type="radio"] {
+  transform: scale(1.4);
+  accent-color: #e07b00;
+}
+
+.booking-form {
+  background: rgba(255, 248, 230, 0.85);
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid rgba(255, 204, 128, 0.3);
+  margin-bottom: 50px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+  color: #5a2d0c;
+  padding: 10px 14px;
+  transition: background 0.2s ease;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.booking-form button {
+  background: linear-gradient(135deg, #8b2e1b, #6e1c0f); /* Deep maroon gradient */
+  color: #fff6e0; /* Light golden-white text */
+  border: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.booking-form button:hover {
+  background: linear-gradient(135deg, #ffcc80, #ff9933); /* Saffron-golden on hover */
+  color: #3e1f0d;
+  box-shadow: 0 0 12px rgba(255, 179, 0, 0.6);
+  transform: translateY(-1px);
+}
+
+
+
+
+.book-now-btn {
+  background: linear-gradient(135deg, #8b2e1b, #6e1c0f); /* Deep maroon */
+  color: #fff6e0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background: linear-gradient(135deg, #ffcc80, #ff9933); /* Saffron hover */
+  color: #3e1f0d;
+  box-shadow: 0 0 10px rgba(255, 179, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+
+
+/* -------------------- */
+
+
+.hover-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.hover-container:hover {
+  background: #f7f4f0;
+}
+
+.hover-container .hover-image {
+  display: none;
+  position: absolute;
+  top: -160px; /* Image appears above the label */
+  left: 0;
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+}
+
+.hover-container:hover .hover-image {
+  display: block;
+}

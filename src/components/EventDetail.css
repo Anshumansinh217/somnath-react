@@ -1,0 +1,12 @@
+.event-meta p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .event-meta p {
+      font-size: 0.95rem;
+    }
+  }
+  

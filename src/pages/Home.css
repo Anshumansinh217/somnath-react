@@ -1,0 +1,714 @@
+.home-container {
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #5f5447;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+
+/* ------------- Service --------------------- */
+
+.services-enhanced {
+  background: linear-gradient(to bottom, #ffffff, #fdf0d5,#F6D5BF);
+}
+
+.service-card-enhanced {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card-enhanced:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  background: #fff9e6;
+  border: 2px solid #ffd369;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.service-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.service-card-enhanced:hover .icon-wrapper {
+  background: #fff3c2;
+}
+
+.read-more-link {
+  font-weight: 600;
+  color: #d5a20b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.read-more-link:hover {
+  color: #a87e02;
+}
+
+
+/* ------------Prayer sec---------- */
+
+
+.prayer-section {
+  background: linear-gradient(to bottom,#F6D5BF ,#d04a4d  );
+  overflow: hidden;
+}
+
+.floating-images {
+  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.floating-img {
+  width: 260px;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .floating-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .floating-img {
+    width: 90%;
+    height: auto;
+    max-width: 340px;
+  }
+}
+
+
+/* ------------------ mission ---------------- */
+
+/* Updated section background */
+.mission-section {
+  background: linear-gradient(to bottom, #d04a4d ,#f7e2d2);
+  padding-top: 100px;
+}
+
+/* Read More Button - Neon Glass Style */
+.read-more-btn {
+  background: rgba(255, 102, 0, 0.9);
+  color: white;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.4);
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.read-more-btn:hover {
+  background: #ff4d00;
+  box-shadow: 0 6px 30px rgba(255, 102, 0, 0.6);
+  transform: scale(1.08);
+}
+
+/* Card Enhancements */
+.custom-card {
+  height: 380px; /* Increased height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Overlay */
+.card-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2));
+  border-radius: inherit;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* Text animation */
+.card-hover h4,
+.card-hover p {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.card-hover:hover h4 {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+.card-hover:hover p {
+  opacity: 0.9;
+}
+
+
+
+/* ----------temple-hero-sec------------------- */
+  
+  
+.temple-hero-section {
+  background: linear-gradient(135deg, #3d2b1f, #5f5447);
+  padding: 4rem 2rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: 4rem;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.temple-hero-section h1,
+.temple-hero-section p,
+.temple-hero-section button {
+  color: #fff;
+}
+
+.hero-image-wrapper {
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 5px;
+  background: linear-gradient(135deg, #ffae74, #ffe16b);
+  transition: all 0.4s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.hero-image-wrapper:hover {
+  box-shadow:
+    0 0 50px rgba(255, 209, 4, 0.3),
+    0 0 50px rgba(240, 88, 0, 0.5),
+    0 0 50px rgba(255, 106, 0, 0.4);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.02);
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.temple-hero-section .btn-warning {
+  background: linear-gradient(135deg, #e65100, #ff9800); /* Saffron gradient */
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.4);
+}
+
+.temple-hero-section .btn-warning:hover {
+  background: linear-gradient(135deg, #ff9800, #e65100); /* reverse gradient */
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.6);
+}
+
+
+/* ------------ */
+
+/* General Reset for the container */
+.top-menu,
+.news-banner-wrapper,
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  
+}
+
+
+
+/* News Banner */
+.news-banner-wrapper {
+  background: rgb(250, 186, 186);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  /* border-radius: 12px; */
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+  color: #6c6c6c;
+ background: linear-gradient(135deg, #FFB41F, #D33422);
+}
+
+.news-label {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.scrolling-container {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.scrolling-text {
+  display: inline-block;
+  animation: scroll-left 15s linear infinite;
+  color: #FDF0D5;
+  font-size: 0.95rem;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.below-news-banner{
+  margin-bottom: 150px;
+}
+
+/* Welcome Cards and Temple Info */
+.welcome-card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: #747474;
+}
+
+.welcome-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #fe9413, #1e1e1e); /* dark charcoal gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for Firefox */
+  color: transparent; /* fallback */
+}
+
+
+.welcome-card .card-text {
+  font-size: 0.95rem;
+  color: #5d5d5d;
+}
+
+.img-style {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Jay Somnath Heading */
+.jay-somnath {
+  background: linear-gradient(90deg, #faf0ca, #f4d35e);
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: #b4b4b4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.om-icon {
+  font-size: 1.8rem;
+  color: #ffb300;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation Card */
+.nav-card {
+  background: linear-gradient(90deg, #faf0ca, #f4d35e);
+  border: 1px solid #242424;
+  border-radius: 12px;
+  padding: 20px;
+  color: #570303;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ffbb00;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.custom-nav-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-nav-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #2c2c2c;
+  font-weight: 500;
+  color: #7f0404;
+  transition: color 0.2s ease;
+}
+
+.custom-nav-list li:hover {
+  color: #ffbb00;
+  cursor: pointer;
+}
+
+/* Link Styling */
+.text-link {
+  color: #ffbb00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Premium Gradient Buttons */
+
+.somnath-top-menu-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  background: linear-gradient(to bottom , #ffffff, #f4a659);
+ 
+  box-shadow: 0 10px 25px rgba(139, 0, 0, 0.15);
+  animation: fadeInDown 0.8s ease-out;
+  padding-bottom: 100px;
+}
+
+.somnath-card {
+  background: linear-gradient(145deg, #fff5e1, #ffecd0);
+  color: #570303;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 1.8rem 1.2rem;
+  width: 160px;
+  min-height: 160px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.somnath-card:hover {
+  transform: translateY(-6px);
+  background: linear-gradient(145deg, #ffdeaa, #ffe5c2);
+  box-shadow: 0 12px 24px rgba(255, 153, 51, 0.3);
+  color: #5e0000;
+}
+
+.somnath-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #da7800;
+  animation: popIn 0.4s ease-out;
+}
+
+/* Optional Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+/* ,,,,,,,,,,,,, */
+/* 🌄 Full Page Light Divine Gradient */
+.home-wrapper-gradient {
+  background: linear-gradient(to bottom, #f7e2d2, #fff);
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🌟 Container */
+.home-content-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* 📅 Events & Darshan Section */
+.event-darshan-section {
+  background: linear-gradient(135deg, #d04a4d, #FAE3CA);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 15px 35px rgba(255, 153, 0, 0.15);
+  border-left: 6px solid #FFD700;
+  margin-bottom: 3rem;
+  animation: fadeUp 0.6s ease-in-out;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #8B0000;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #FFD700, #FF9933);
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+/* 🟠 Event Date Box */
+.event-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.event-date {
+  background: linear-gradient(135deg, #ffcc00, #ff9933);
+  color: #000;
+  padding: 1rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  min-width: 75px;
+  animation: bounceIn 0.6s ease-in-out;
+}
+
+.event-day {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.event-month {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.event-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #5c0000;
+}
+
+.event-desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 📷 Darshan Image */
+.live-darshan-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #8B0000;
+}
+
+.darshan-image {
+  max-width: 100%;
+  border: 4px solid #FFD700;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease;
+}
+
+.darshan-image:hover {
+  transform: scale(1.02);
+}
+
+/* 🖼️ Gallery Promo */
+.gallery-promo {
+  background: linear-gradient(135deg, #fff2d5, #D04A4D);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 12px 28px rgba(255, 204, 0, 0.2);
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.gallery-promo h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1.5rem;
+  color: #4b2e00;
+  font-weight: 600;
+}
+
+.gallery-btn {
+  background: linear-gradient(to right, #FFD700, #FF9933);
+  color: #000;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  box-shadow: 0 8px 18px rgba(255, 165, 0, 0.3);
+}
+
+.gallery-btn:hover {
+  background: #000;
+  color: #FFD700;
+  border: 1px solid #FFD700;
+}
+
+/* 🗺️ Nearby Places */
+.nearby-places {
+  background: linear-gradient(to right, #D04A4D, #f9e1b8);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+}
+
+.nearby-places .section-title {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  color: #6b3b00;
+  text-align: center;
+}
+
+/* 🏞️ Place Cards */
+.place-card {
+  border: none;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  background: #fffdf7;
+}
+
+.place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.place-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 4px solid #FFD700;
+}
+
+.place-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a2700;
+  margin-top: 1rem;
+}
+
+/* ✨ Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
