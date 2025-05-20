@@ -9,16 +9,16 @@ import slide2 from "../img/temple-image/pg/somnath-temple-last-day-of-shravan-12
 import slide3 from "../img/temple-image/pexels-kabita-darlami-2613403-5756687.jpg";
 import somnathVideo from "../img/vid/somnath_vid.mp4";
 
-import { useTranslation } from "react-i18next"; // 👈 import i18n hook
+import { useLanguage } from "../contexts/LanguageContext"; // ✅ useLanguage instead
 
 const HeroCarousel = () => {
-  const { t } = useTranslation(); // 👈 initialize translation
+  const { t } = useLanguage(); // ✅ updated
 
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6000,
     speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -29,7 +29,7 @@ const HeroCarousel = () => {
   return (
     <div className="hero-carousel">
       <Slider {...settings}>
-      <div className="slide">
+        <div className="slide">
           <video autoPlay muted loop className="carousel-video">
             <source src={somnathVideo} type="video/mp4" />
             Your browser does not support the video tag.
@@ -61,7 +61,6 @@ const HeroCarousel = () => {
             <p>{t("carousel.serenity_desc")}</p>
           </div>
         </div>
-        
       </Slider>
     </div>
   );

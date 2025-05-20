@@ -1,7 +1,11 @@
 import React from 'react';
+import ScrollToTop from './components/ScrollToTop';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Pooja from './pages/Pooja';
@@ -16,8 +20,6 @@ import NewsPage from './pages/NewsPage';
 import NewsList from './pages/NewsList';
 import NewsDetail from './components/NewsDetail';
 import BookingPage from './pages/BookingPage';
-
-
 import RoomDetails from './pages/RoomDetails';
 
 
@@ -25,6 +27,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

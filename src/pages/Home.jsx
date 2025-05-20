@@ -6,13 +6,15 @@ import two from "../img/temple-image/2.png";
 import three from "../img/temple-image/Somnath_301023.jpg";
 import four from "../img/temple-image/somnath_temple_bg.jpg";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { FaPrayingHands, FaHotel, FaVideo, FaGift } from 'react-icons/fa';
-// import i18n from '../i18n';
+
+import { FaPrayingHands, FaHotel, FaVideo, FaGift } from "react-icons/fa";
+
+import { useLanguage } from "../contexts/LanguageContext";
+
 
 const Home = () => {
-  const { t } = useTranslation();
-  
+ 
+const { t } = useLanguage();
   return (
     <main className="home-container">
       {/* Language Switcher */}
@@ -29,104 +31,99 @@ const Home = () => {
       {/* ----------------- */}
 
       <div>
-  {/* Top Menu */}
-  <div className="somnath-top-menu-cards">
-    <Link to="/Pooja" className="somnath-card">
-      <FaPrayingHands className="somnath-icon" /> <br />
-      {t("onlinePooja")} 
-    </Link>
-    <Link to="/BookingPage" className="somnath-card">
-      <FaHotel className="somnath-icon" /> <br />
-      {t("roomBooking")} <br /> {t("Booking")}
-    </Link>
-    <Link to="/Darshan" className="somnath-card">
-      <FaVideo className="somnath-icon" /> <br />
-      {t("live")} <br /> {t("Darshan")}
-    </Link>
-    <Link to="/shop" className="somnath-card">
-      <FaGift className="somnath-icon" /> <br />
-      {t("online")} <br /> {t("Prashad")}
-    </Link>
-  </div>
-
-  {/* News Banner */}
-  <div className="news-banner-wrapper d-flex align-items-center">
-    <span className="news-label text-danger fw-bold me-2">{t("news_label")}</span>
-    <div className="scrolling-container">
-      <div className="scrolling-text fw-bold">
-        {t("news_text")}
-      </div>
-    </div>
-  </div>
-
-  {/* Main Content */}
-  <div className="container below-news-banner mt-4">
-    <div className="row">
-      {/* Left Column */}
-      <div className="col-md-8">
-        <div className="jay-somnath d-flex align-items-center mb-3">
-          <div className="om-icon me-3">ॐ</div>
-          <h2 className="section-title">{t("titles_jaySomnath")}</h2>
+        {/* Top Menu */}
+        <div className="somnath-top-menu-cards">
+          <Link to="/Pooja" className="somnath-card">
+            <FaPrayingHands className="somnath-icon" /> <br />
+            {t("onlinePooja")}
+          </Link>
+          <Link to="/BookingPage" className="somnath-card">
+            <FaHotel className="somnath-icon" /> <br />
+            {t("roomBooking")} <br /> {t("Booking")}
+          </Link>
+          <Link to="/Darshan" className="somnath-card">
+            <FaVideo className="somnath-icon" /> <br />
+            {t("live")} <br /> {t("Darshan")}
+          </Link>
+          <Link to="/shop" className="somnath-card">
+            <FaGift className="somnath-icon" /> <br />
+            {t("online")} <br /> {t("Prashad")}
+          </Link>
         </div>
 
-        {/* Welcome Section */}
-        <div className="welcome-card d-flex mb-4">
-          <img
-            src={two}
-            alt="Somnath Temple"
-            className="img-style me-3"
-          />
-          <div>
-            <h5 className="card-title">{t("welcome_title")}</h5>
-            <p className="card-text">
-              {t("welcome_text")}
-            </p>
-            <a href="/" className="text-link">
-              {t("readMore")}
-            </a>
+        {/* News Banner */}
+        <div className="news-banner-wrapper d-flex align-items-center">
+          <span className="news-label text-danger fw-bold me-2">
+            {t("news_label")}
+          </span>
+          <div className="scrolling-container">
+            <div className="scrolling-text fw-bold">{t("news_text")}</div>
           </div>
         </div>
 
-        {/* Temple Info Section */}
-        <div className="welcome-card d-flex">
-          <img
-            src={three}
-            alt="Temple Inside"
-            className="img-style me-3"
-          />
-          <div>
-            <h5 className="card-title">{t("temple_title")}</h5>
-            <p className="card-text">
-              {t("temple_text")}
-            </p>
+        {/* Main Content */}
+        <div className="container below-news-banner mt-4">
+          <div className="row">
+            {/* Left Column */}
+            <div className="col-md-8">
+              <div className="jay-somnath d-flex align-items-center mb-3">
+                <div className="om-icon me-3">ॐ</div>
+                <h2 className="section-title">{t("titles_jaySomnath")}</h2>
+              </div>
+
+              {/* Welcome Section */}
+              <div className="welcome-card d-flex mb-4">
+                <img
+                  src={two}
+                  alt="Somnath Temple"
+                  className="img-style me-3"
+                />
+                <div>
+                  <h5 className="card-title">{t("welcome_title")}</h5>
+                  <p className="card-text">{t("welcome_text")}</p>
+                  <a href="/" className="text-link">
+                    {t("readMore")}
+                  </a>
+                </div>
+              </div>
+
+              {/* Temple Info Section */}
+              <div className="welcome-card d-flex">
+                <img
+                  src={three}
+                  alt="Temple Inside"
+                  className="img-style me-3"
+                />
+                <div>
+                  <h5 className="card-title">{t("temple_title")}</h5>
+                  <p className="card-text">{t("temple_text")}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column */}
+            <div className="col-md-4">
+              <div className="nav-card">
+                <h5 className="text-center nav-title">{t("quickNav_title")}</h5>
+                <ul className="custom-nav-list mt-3">
+                  <li>ॐ {t("quickNav_jaySomnath")}</li>
+                  <li>ॐ {t("quickNav_somnathDarshan")}</li>
+                  <li>ॐ {t("quickNav_liveDarshan")}</li>
+                  <li>ॐ {t("quickNav_nearestPlaces")}</li>
+                  <li>ॐ {t("quickNav_pilgrimFacilities")}</li>
+                  <li>ॐ {t("quickNav_festivals")}</li>
+                  <li>ॐ {t("quickNav_socialActivity")}</li>
+                  <li>ॐ {t("quickNav_heritageWalk")}</li>
+                  <li>ॐ {t("quickNav_templeWalk")}</li>
+                  <li>ॐ {t("quickNav_trustee")}</li>
+                  <li>ॐ {t("quickNav_ramMandir")}</li>
+                  <li>ॐ {t("quickNav_faqs")}</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Right Column */}
-      <div className="col-md-4">
-        <div className="nav-card">
-          <h5 className="text-center nav-title">{t("quickNav_title")}</h5>
-          <ul className="custom-nav-list mt-3">
-            <li>ॐ {t("quickNav_jaySomnath")}</li>
-            <li>ॐ {t("quickNav_somnathDarshan")}</li>
-            <li>ॐ {t("quickNav_liveDarshan")}</li>
-            <li>ॐ {t("quickNav_nearestPlaces")}</li>
-            <li>ॐ {t("quickNav_pilgrimFacilities")}</li>
-            <li>ॐ {t("quickNav_festivals")}</li>
-            <li>ॐ {t("quickNav_socialActivity")}</li>
-            <li>ॐ {t("quickNav_heritageWalk")}</li>
-            <li>ॐ {t("quickNav_templeWalk")}</li>
-            <li>ॐ {t("quickNav_trustee")}</li>
-            <li>ॐ {t("quickNav_ramMandir")}</li>
-            <li>ॐ {t("quickNav_faqs")}</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
       {/* ------------ */}
 
@@ -228,22 +225,22 @@ const Home = () => {
               {
                 title: t("sermon"),
                 desc: t("sermon_desc"),
-                img: "../img/temple-image/pexels-rohit-sharma-1230131-20717199.jpg",
+                img: "../img/temple-image/pg/somnath_temple_bg.jpg",
               },
               {
                 title: t("festival"),
                 desc: t("festival_desc"),
-                img: "../img/temple-image/yan2.jpg",
+                img: "../img/temple-image/pg/somnath_temple_frontview.jpg",
               },
               {
                 title: t("volunteer_card"),
                 desc: t("volunteer_card_desc"),
-                img: "../img/temple-image/yand1.jpg",
+                img: "../img/temple-image/pg/somnath_temple.jpg",
               },
               {
                 title: t("daily_prayers"),
                 desc: t("daily_prayers_desc"),
-                img: "../img/temple-image/yand2.jpg",
+                img: "../img/temple-image/pg/somnath-temple-last-day-of-shravan-1210x642-1.jpg",
               },
             ].map((card, index) => (
               <div className="col" key={index}>
@@ -266,76 +263,84 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ------------- */}
 
-
-            {/* ------------- */}
-
-            <div className="home-wrapper-gradient">
-      <div className="home-content-wrapper">
-
-        {/* 📅 Events & Darshan Block */}
-        <section className="event-darshan-section mb-5 p-4 rounded shadow">
-          <h2 className="section-title mb-4">{t("eventsAndDarshan")}</h2>
-          <div className="row align-items-center">
-            <div className="col-md-6 mb-3 mb-md-0">
-              <div className="event-box">
-                <div className="event-date">
-                  <div className="event-day">12</div>
-                  <div className="event-month">May</div>
-                </div>
-                <div className="event-info">
-                  <h5 className="event-title">{t("specialPoojaEvent")}</h5>
-                  <p className="event-desc">{t("specialPoojaDesc")}</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 text-center">
-              <h5 className="live-darshan-title">{t("liveDarshan")}</h5>
-              <img
-                src="../img/temple-image/somnath-temple-last-day-of-shravan-1210x642-1.jpg"
-                alt={t("liveDarshan")}
-                className="img-fluid rounded darshan-image"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* 📸 Gallery Promotion Section */}
-        <section className="gallery-promo text-center p-5 rounded shadow mb-5">
-          <h2 className="mb-3">{t("galleryHeading")}</h2>
-          <Link to="/GalleryPage" className="btn gallery-btn">
-            {t("goToGallery")}
-          </Link>
-        </section>
-
-        {/* 🗺️ Visiting Places */}
-        <section className="nearby-places p-4 rounded shadow">
-          <h2 className="section-title text-center mb-4">{t("nearbyHeading")}</h2>
-          <div className="row">
-            {[ 
-              { name: t("bhalkaTirth"), image: "../img/temple-image/pexels-byrahul-2121549.jpg" },
-              { name: t("dehotsargTirth"), image: "../img/temple-image/pexels-byrahul-2121549.jpg" },
-              { name: t("prachiTirth"), image: "../img/temple-image/pexels-navneet-shanu-202773-672630.jpg" },
-            ].map((place, index) => (
-              <div className="col-md-4 mb-4" key={index}>
-                <div className="card place-card h-100">
-                  <img src={place.image} className="card-img-top" alt={place.name} />
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{place.name}</h5>
+      <div className="home-wrapper-gradient">
+        <div className="home-content-wrapper">
+          {/* 📅 Events & Darshan Block */}
+          <section className="event-darshan-section mb-5 p-4 rounded shadow">
+            <h2 className="section-title mb-4">{t("eventsAndDarshan")}</h2>
+            <div className="row align-items-center">
+              <div className="col-md-6 mb-3 mb-md-0">
+                <div className="event-box">
+                  <div className="event-date">
+                    <div className="event-day">12</div>
+                    <div className="event-month">May</div>
+                  </div>
+                  <div className="event-info">
+                    <h5 className="event-title">{t("specialPoojaEvent")}</h5>
+                    <p className="event-desc">{t("specialPoojaDesc")}</p>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
+              <div className="col-md-6 text-center">
+                <h5 className="live-darshan-title">{t("liveDarshan")}</h5>
+                <img
+                  src="../img/temple-image/somnath-temple-last-day-of-shravan-1210x642-1.jpg"
+                  alt={t("liveDarshan")}
+                  className="img-fluid rounded darshan-image"
+                />
+              </div>
+            </div>
+          </section>
 
+          {/* 📸 Gallery Promotion Section */}
+          <section className="gallery-promo text-center p-5 rounded shadow mb-5">
+            <h2 className="mb-3">{t("galleryHeading")}</h2>
+            <Link to="/GalleryPage" className="btn gallery-btn">
+              {t("goToGallery")}
+            </Link>
+          </section>
+
+          {/* 🗺️ Visiting Places */}
+          <section className="nearby-places p-4 rounded shadow">
+            <h2 className="section-title text-center mb-4">
+              {t("nearbyHeading")}
+            </h2>
+            <div className="row">
+              {[
+                {
+                  name: t("bhalkaTirth"),
+                  image: "../img/temple-image/Bhalka-Tirth-Thumbnail.jpg",
+                },
+                {
+                  name: t("dehotsargTirth"),
+                  image: "../img/temple-image/dehots.jpg",
+                },
+                {
+                  name: t("prachiTirth"),
+                  image: "../img/temple-image/prachi-tirth.jpg",
+                },
+              ].map((place, index) => (
+                <div className="col-md-4 mb-4" key={index}>
+                  <div className="card place-card h-100">
+                    <img
+                      src={place.image}
+                      className="card-img-top"
+                      alt={place.name}
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="card-title">{place.name}</h5>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
 
-
-        {/* ---------------------- */}
-
-
+      {/* ---------------------- */}
 
       <section className="temple-hero-section">
         <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -358,12 +363,12 @@ const Home = () => {
             </h1>
             <p className="lead fade-in delay-1">{t("temple_intro")}</p>
             <div className="d-grid gap-2 d-md-flex justify-content-md-start fade-in delay-2">
-              <button
-                type="button"
+              <Link
+                to="/ContactUs"
                 className="btn btn-warning btn-lg px-4 fw-semibold text-white shadow rounded-pill"
               >
                 {t("contact_us")}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -80,16 +80,19 @@
   "prachiTirth": "प्राची तीर्थ",
 
 
-  "carousel": {
-  "welcome_title": "सोमनाथ में आपका स्वागत है",
-  "welcome_desc": "भगवान शिव की दिव्य उपस्थिति का अनुभव करें",
-  "jyotirlinga_title": "पवित्र ज्योतिर्लिंग",
-  "jyotirlinga_desc": "बारह ज्योतिर्लिंगों में प्रथम",
-  "serenity_title": "आध्यात्मिक शांति",
-  "serenity_desc": "पवित्र तटों पर शांति पाएं",
-  "visual_title": "दिव्य क्षण",
-  "visual_desc": "दृश्यों के माध्यम से उपस्थिति महसूस करें"
-}
+
+
+
+
+
+  "carousel.welcome_title": "सोमनाथ में आपका स्वागत है",
+  "carousel.welcome_desc": "भगवान शिव की दिव्य उपस्थिति का अनुभव करें",
+  "carousel.jyotirlinga_title": "पवित्र ज्योतिर्लिंग",
+  "carousel.jyotirlinga_desc": "बारह ज्योतिर्लिंगों में पहला",
+  "carousel.serenity_title": "दिव्य शांति",
+  "carousel.serenity_desc": "पवित्र तटों पर शांति पाएं",
+  "carousel.visual_title": "दिव्य क्षण",
+  "carousel.visual_desc": "दृश्यों के माध्यम से उपस्थिति महसूस करें"
 
 
 
@@ -98,41 +101,41 @@
 
 
 ,
-"nav": {
-  "home": "होम",
-  "pooja_vidhi": "पूजा विधि",
-  "live_darshan": "लाइव दर्शन",
-  "gallery": "गैलरी",
-  "events": "ईवेंट्स",
-  "news": "समाचार एवं अपडेट्स",
-  "shop": "दुकान",
-  "contact_us": "संपर्क करें",
-  "Room":"रूम"
-}
+
+
+
+"nav.home": "मुख्य पृष्ठ",
+  "nav.pooja_vidhi": "पूजा और विधि",
+  "nav.live_darshan": "लाइव दर्शन",
+  "nav.gallery": "गैलरी",
+  "nav.events": "इवेंट्स",
+  "nav.news": "समाचार",
+  "nav.shop": "दुकान",
+  "nav.Room": "कमरा बुकिंग",
+  "nav.contact_us": "संपर्क करें"
+
+
+
 ,
-"footer": {
-  "about_title": "श्री सोमनाथ मंदिर के बारे में",
-  "about_text": "श्री सोमनाथ ट्रस्ट आपको आदि ज्योतिर्लिंग श्री सोमनाथ महादेव की पावन भूमि में स्वागत करता है, जहाँ से भगवान श्रीकृष्ण ने अपने निजधाम के लिए अंतिम यात्रा शुरू की थी।",
-  "useful_links": "उपयोगी लिंक",
-  "contact": "संपर्क करें",
-  "address": "सोमनाथ, प्रभास पाटन, जिला गिर सोमनाथ-362268",
-  "email": "ईमेल: sompp[at]somnath[dot]org",
-  "phone": "फोन: +91-94282 14914",
-  "links": {
-    "home": "मुखपृष्ठ",
-    "tender": "निविदाएं",
-    "events": "घटनाएं",
-    "contact": "संपर्क करें",
-    "privacy": "गोपनीयता नीति",
-    "pooja": "ऑनलाइन पूजा विधि / दान",
-    "rooms": "कक्ष बुकिंग",
-    "darshan": "लाइव दर्शन",
-    "prasad": "ऑनलाइन प्रसाद"
-  }
-  
-  
-  
-}
+
+  "footer.about_title": "श्री सोमनाथ मंदिर के बारे में",
+  "footer.about_text": "श्री सोमनाथ ट्रस्ट आपको आदि ज्योतिर्लिंग श्री सोमनाथ महादेव की पवित्र भूमि पर स्वागत करता है, जहां से भगवान श्री कृष्ण ने अपने निवास के लिए अंतिम यात्रा शुरू की थी।",
+  "footer.useful_links": "उपयोगी लिंक",
+  "footer.contact": "संपर्क करें",
+  "footer.address": "सोमनाथ, प्रभास पाटन, जिला गिर सोमनाथ - 362268",
+  "footer.email": "ईमेल: sompp[at]somnath[dot]org",
+  "footer.phone": "फोन: +91-94282 14914",
+  "footer.links.home": "मुखपृष्ठ",
+  "footer.links.tender": "टेंडर",
+  "footer.links.events": "कार्यक्रम",
+  "footer.links.contact": "संपर्क करें",
+  "footer.links.privacy": "गोपनीयता नीति",
+  "footer.links.pooja": "ऑनलाइन पूजा एवं दान",
+  "footer.links.rooms": "कमरे की बुकिंग",
+  "footer.links.darshan": "लाइव दर्शन",
+  "footer.links.prasad": "ऑनलाइन प्रसाद"
+
+
 
 
 

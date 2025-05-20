@@ -1,104 +1,128 @@
 .hero-carousel {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: relative;
-    transition: transform 0.6s ease;
-  }
-  
-  .slide:hover img {
-    transform: scale(1.05);
-    filter: brightness(0.4);
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    filter: brightness(0.5);
-    transition: transform 0.6s ease, filter 0.6s ease;
-    display: block;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 8%;
-    transform: translateY(-50%);
-    z-index: 1;
-    color: white;
-    max-width: 600px;
-    padding: 20px 30px;
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.153);
-    border-left: 5px solid #ffd700;
-    border-radius: 10px;
-    animation: fadeInUp 1s ease forwards;
-    opacity: 0;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-  
-  .slick-active .overlay-text {
-    opacity: 1;
-    animation: fadeInUp 1s ease forwards;
-  }
-  
-  .slide:hover .overlay-text {
-    transform: translateY(-52%) scale(1.02);
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
-  }
-  
-  .overlay-text h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-    transition: color 0.3s;
-  }
-  
-  .overlay-text p {
-    font-size: 1.4rem;
-    color: #f0e9c9;
-    transition: color 0.3s;
-  }
-  
-  .overlay-text:hover h1 {
-    color: #ffe780;
-  }
-  
-  .slick-dots {
-    bottom: 20px;
-  }
-  
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: white;
-    opacity: 0.8;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: #ffd700;
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(-50%);
-      opacity: 1;
-    }
-  }
-  
-  /* -------------------------- */
-
-.carousel-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
+.slide {
+  position: relative;
+  transition: transform 0.6s ease;
+}
+
+.slide img,
+.carousel-video {
+  width: 100%;
+  height: 100vh; /* Full screen height for hero feel */
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: transform 0.6s ease, filter 0.6s ease;
+  display: block;
+}
+
+/* Hover Zoom & Darken */
+.slide:hover img,
+.slide:hover .carousel-video {
+  transform: scale(1.03);
+  filter: brightness(0.4);
+}
+
+/* Overlay Text Styling */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  max-width: 600px;
+  padding: 25px 35px;
+  /* background: rgba(255, 255, 255, 0); */
+  border-left: 6px solid #ffd700;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Fade-in on active */
+.slick-active .overlay-text {
+  opacity: 1;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Hover Text Movement */
+.slide:hover .overlay-text {
+  transform: translateY(-52%) scale(1.03);
+  box-shadow: 0 12px 25px rgba(255, 215, 0, 0.35);
+}
+
+/* Typography */
+.overlay-text h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.overlay-text p {
+  font-size: 1.4rem;
+  color: #f5eecb;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Hover highlight */
+.overlay-text:hover h1 {
+  color: #ffe780;
+}
+
+/* Dots Navigation */
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffd700;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .overlay-text {
+    left: 5%;
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .overlay-text h1 {
+    font-size: 2rem;
+  }
+
+  .overlay-text p {
+    font-size: 1rem;
+  }
+
+  .slide img,
+  .carousel-video {
+    height: 80vh;
+  }
+}

@@ -81,50 +81,58 @@
   "prachiTirth": "પ્રાચી તીર્થ",
 
 
-  "carousel": {
-  "welcome_title": "સોમનાથમાં આપનું સ્વાગત છે",
-  "welcome_desc": "ભગવાન શિવની દિવ્ય ઉપસ્થિતિનો અનુભવ કરો",
-  "jyotirlinga_title": "પવિત્ર જ્યોતિર્લિંગ",
-  "jyotirlinga_desc": "બાર જ્યોતિર્લિંગોમાં પ્રથમ",
-  "serenity_title": "દિવ્ય શાંતિ",
-  "serenity_desc": "પવિત્ર તટે શાંતિ શોધો",
-  "visual_title": "દિવ્ય ક્ષણો",
-  "visual_desc": "દૃશ્યો દ્વારા ઉપસ્થિતિ અનુભવો"
-}
+
+
+
+ "carousel.welcome_title": "સોમનાથમાં આપનું સ્વાગત છે",
+  "carousel.welcome_desc": "ભગવાન શિવની દૈવી હાજરીનો અનુભવ કરો",
+  "carousel.jyotirlinga_title": "પવિત્ર જ્યોતિર્લિંગ",
+  "carousel.jyotirlinga_desc": "બાર જ્યોતિર્લિંગમાં પ્રથમ",
+  "carousel.serenity_title": "દૈવી શાંતિ",
+  "carousel.serenity_desc": "પવિત્ર કિનારાઓ પર શાંતિ મેળવો",
+  "carousel.visual_title": "દૈવી ક્ષણો",
+  "carousel.visual_desc": "દ્રશ્યો મારફતે હાજરી અનુભવાવો"
+
+
 ,
-"nav": {
-  "home": "હોમ",
-  "pooja_vidhi": "પૂજા વિધિ",
-  "live_darshan": "લાઇવ દર્શન",
-  "gallery": "ગેલેરી",
-  "events": "ઇવેન્ટ્સ",
-  "news": "સમાચાર અને અપડેટ્સ",
-  "shop": "દુકાન",
-  "contact_us": "સંપર્ક કરો",
-  "Room":"રૂમ"
-}
+
+
+
+"nav.home": "હોમ",
+  "nav.pooja_vidhi": "પૂજા અને વિધી",
+  "nav.live_darshan": "લાઈવ દર્શન",
+  "nav.gallery": "ગેલેરી",
+  "nav.events": "ઇવેન્ટ્સ",
+  "nav.news": "સમાચાર",
+  "nav.shop": "દુકાન",
+  "nav.Room": "રૂમ બુકિંગ",
+  "nav.contact_us": "સંપર્ક કરો"
+
+
+
+
+
 ,
-"footer": {
-  "about_title": "શ્રી સોમનાથ મંદિર વિશે",
-  "about_text": "શ્રી સોમનાથ ટ્રસ્ટ તમને આદિ જ્યોતિર્લિંગ શ્રી સોમનાથ મહાદેવની પવિત્ર ધરતીમાં સ્વાગત કરે છે, જ્યાંથી ભગવાન શ્રી કૃષ્ણે પોતાનું નિજધામ માટે છેલ્લી મુસાફરી કરી હતી.",
-  "useful_links": "ઉપયોગી લિંક્સ",
-  "contact": "સંપર્ક કરો",
-  "address": "સોમનાથ, પ્રભાસ પાટણ, જી. गिर સોમનાથ-૩૬૨૨૬૮",
-  "email": "ઇમેઇલ: sompp[at]somnath[dot]org",
-  "phone": "ફોન: +૯૧-૯૪૨૮૨ ૧૪૯૧૪",
-  "links": {
-    "home": "મુખપૃષ્ઠ",
-    "tender": "ટેન્ડર",
-    "events": "પ્રસંગો",
-    "contact": "સંપર્ક કરો",
-    "privacy": "ગોપનીયતા નીતિ",
-    "pooja": "ઓનલાઇન પૂજા વિધિ / દાન",
-    "rooms": "રૂમ બુકિંગ",
-    "darshan": "લાઇવ દર્શન",
-    "prasad": "ઓનલાઇન પ્રસાદ"
-  }
- 
-}
+
+
+
+
+ "footer.about_title": "શ્રી સોમનાથ મંદિર વિશે",
+  "footer.about_text": "શ્રી સોમનાથ ટ્રસ્ટ તમને આદિ જ્યોતિર્લિંગ શ્રી સોમનાથ મહાદેવની પવિત્ર ધરતીમાં સ્વાગત કરે છે, જ્યાંથી ભગવાન શ્રી કૃષ્ણે પોતાનું નિજધામ માટે છેલ્લી મુસાફરી કરી હતી.",
+  "footer.useful_links": "ઉપયોગી લિંક્સ",
+  "footer.contact": "સંપર્ક કરો",
+  "footer.address": "સોમનાથ, પ્રભાસ પાટણ, જી. गिर સોમનાથ-૩૬૨૨૬૮",
+  "footer.email": "ઇમેઇલ: sompp[at]somnath[dot]org",
+  "footer.phone": "ફોન: +૯૧-૯૪૨૮૨ ૧૪૯૧૪",
+  "footer.links.home": "મુખપૃષ્ઠ",
+  "footer.links.tender": "ટેન્ડર",
+  "footer.links.events": "પ્રસંગો",
+  "footer.links.contact": "સંપર્ક કરો",
+  "footer.links.privacy": "ગોપનીયતા નીતિ",
+  "footer.links.pooja": "ઓનલાઇન પૂજા વિધિ / દાન",
+  "footer.links.rooms": "રૂમ બુકિંગ",
+  "footer.links.darshan": "લાઇવ દર્શન",
+  "footer.links.prasad": "ઓનલાઇન પ્રસાદ"
 
 
 

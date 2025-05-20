@@ -87,49 +87,52 @@
 
 
   
-  "carousel": {
-  "welcome_title": "Welcome to Somnath",
-  "welcome_desc": "Experience the divine presence of Lord Shiva",
-  "jyotirlinga_title": "Sacred Jyotirlinga",
-  "jyotirlinga_desc": "First among the twelve jyotirlingas",
-  "serenity_title": "Divine Serenity",
-  "serenity_desc": "Find peace at the holy shores",
-  "visual_title": "Divine Moments",
-  "visual_desc": "Feel the presence through visuals"
-},
-"nav": {
-  "home": "Home",
-  "pooja_vidhi": "Pooja Vidhi",
-  "live_darshan": "Live Darshan",
-  "gallery": "Gallery",
-  "events": "Events",
-  "news": "News & Updates",
-  "shop": "Shop",
-  "contact_us": "Contact Us",
-  "Room":"Room"
-}
-,
-"footer": {
-  "about_title": "About Shree Somnath Temple",
-  "about_text": "Shree Somnath Trust welcomes you to the holy place of the Aadi Jyotirling Shree Somnath Mahadev and the sacred soil from where Bhagvan Shri Krishna took his last journey to his neejdham.",
-  "useful_links": "Useful Links",
-  "contact": "Contact",
-  "address": "Somnath, Prabhas Patan, Dist. Gir Somnath-362268",
-  "email": "Email: sompp[at]somnath[dot]org",
-  "phone": "Phone: +91-94282 14914",
-  "links": {
-    "home": "Home",
-    "tender": "Tender",
-    "events": "Events",
-    "contact": "Contact Us",
-    "privacy": "Privacy Policy",
-    "pooja": "Online Pooja Vidhi / Donation",
-    "rooms": "Room Booking",
-    "darshan": "Live Darshan",
-    "prasad": "Online Prashad"
-  }
+
   
-}
+  "carousel.welcome_title": "Welcome to Somnath",
+  "carousel.welcome_desc": "Experience the divine presence of Lord Shiva",
+  "carousel.jyotirlinga_title": "Sacred Jyotirlinga",
+  "carousel.jyotirlinga_desc": "First among the twelve jyotirlingas",
+  "carousel.serenity_title": "Divine Serenity",
+  "carousel.serenity_desc": "Find peace at the holy shores",
+  "carousel.visual_title": "Divine Moments",
+  "carousel.visual_desc": "Feel the presence through visuals",
+
+
+
+
+
+
+
+"nav.home": "Home",
+  "nav.pooja_vidhi": "Pooja & Vidhi",
+  "nav.live_darshan": "Live Darshan",
+  "nav.gallery": "Gallery",
+  "nav.events": "Events",
+  "nav.news": "News",
+  "nav.shop": "Shop",
+  "nav.Room": "Room Booking",
+  "nav.contact_us": "Contact Us",
+  
+
+
+  "footer.about_title": "About Shri Somnath Temple",
+"footer.about_text": "Shri Somnath Trust welcomes you to the sacred land of the First Jyotirlinga, Shri Somnath Mahadev, from where Lord Shri Krishna began His final journey to His divine abode.",
+"footer.useful_links": "Useful Links",
+"footer.contact": "Contact Us",
+"footer.address": "Somnath, Prabhas Patan, Dist. Gir Somnath - 362268",
+"footer.email": "Email: sompp[at]somnath[dot]org",
+"footer.phone": "Phone: +91-94282 14914",
+"footer.links.home": "Home",
+"footer.links.tender": "Tender",
+"footer.links.events": "Events",
+"footer.links.contact": "Contact",
+"footer.links.privacy": "Privacy Policy",
+"footer.links.pooja": "Online Pooja / Donation",
+"footer.links.rooms": "Room Booking",
+"footer.links.darshan": "Live Darshan",
+"footer.links.prasad": "Online Prasad"
+
 
 
 

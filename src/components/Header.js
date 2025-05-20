@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useLanguage } from "../contexts/LanguageContext";
 import './Header.css';
-import i18n from '../i18n';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -18,7 +17,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-  const { t } = useTranslation();
+ const { t, changeLanguage, language } = useLanguage();
+ // ✅ Now includes changeLanguage + language
 
   return (
     <header className="custom-header sticky-top shadow-sm">
@@ -43,7 +43,7 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarsExample05">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link" to="/"> 
+                <Link className="nav-link" to="/">
                   <FontAwesomeIcon icon={faHome} className="me-1" /> {t('nav.home')}
                 </Link>
               </li>
@@ -84,14 +84,27 @@ const Header = () => {
               </li>
             </ul>
 
+            {/* ✅ Language Switcher - Updated */}
             <div className="language-switcher text-end p-3">
-              <button className="btn btn-sm btn-outline-danger mx-1" onClick={() => i18n.changeLanguage('en')}>
+              <button
+                className="btn btn-sm btn-outline-danger mx-1"
+                onClick={() => changeLanguage('en')}
+                disabled={language === 'en'}
+              >
                 EN
               </button>
-              <button className="btn btn-sm btn-outline-light mx-1" onClick={() => i18n.changeLanguage('hi')}>
+              <button
+                className="btn btn-sm btn-outline-light mx-1"
+                onClick={() => changeLanguage('hi')}
+                disabled={language === 'hi'}
+              >
                 HI
               </button>
-              <button className="btn btn-sm btn-outline-success mx-1" onClick={() => i18n.changeLanguage('gu')}>
+              <button
+                className="btn btn-sm btn-outline-success mx-1"
+                onClick={() => changeLanguage('gu')}
+                disabled={language === 'gu'}
+              >
                 GU
               </button>
             </div>

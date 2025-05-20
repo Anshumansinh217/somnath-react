@@ -1,9 +1,9 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { useLanguage } from "../contexts/LanguageContext";
 import "./Footer.css";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useLanguage();
 
   const usefulLinks = [
     { label: t("footer.links.home"), href: "/" },
