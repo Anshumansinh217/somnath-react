@@ -22,7 +22,8 @@
 /* ------------- Service --------------------- */
 
 .services-enhanced {
-  background: linear-gradient(to bottom, #ffffff, #fdf0d5,#F6D5BF);
+  background: linear-gradient(to bottom, #ffffff, #fdf0d5, #fce3c0);
+
 }
 
 .service-card-enhanced {
@@ -78,7 +79,12 @@
 
 
 .prayer-section {
-  background: linear-gradient(to bottom,#F6D5BF ,#d04a4d  );
+  background: linear-gradient(to bottom, #fce3c0, #f9d5a1, #f4b860);
+
+
+
+
+
   overflow: hidden;
 }
 
@@ -120,7 +126,10 @@
 
 /* Updated section background */
 .mission-section {
-  background: linear-gradient(to bottom, #d04a4d ,#f7e2d2);
+ background: linear-gradient(to bottom, #f4b860, #f2a65a, #fff1e0);
+
+
+
   padding-top: 100px;
 }
 
@@ -504,7 +513,9 @@
 /* ,,,,,,,,,,,,, */
 /* 🌄 Full Page Light Divine Gradient */
 .home-wrapper-gradient {
-  background: linear-gradient(to bottom, #f7e2d2, #fff);
+  background: linear-gradient(to bottom, #fff1e0, #fefaf4, #ffffff);
+
+
   padding: 3rem 1rem;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -518,14 +529,15 @@
 
 /* 📅 Events & Darshan Section */
 .event-darshan-section {
-  background: linear-gradient(135deg, #d04a4d, #FAE3CA);
+  background: linear-gradient(135deg, #ffffff, #FF9400, #ffffff);
   border-radius: 20px;
   padding: 2.5rem;
-  box-shadow: 0 15px 35px rgba(255, 153, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(230, 184, 0, 0.2);
   border-left: 6px solid #FFD700;
   margin-bottom: 3rem;
   animation: fadeUp 0.6s ease-in-out;
 }
+
 
 .section-title {
   font-size: 2rem;
@@ -539,11 +551,12 @@
   content: "";
   width: 60px;
   height: 4px;
-  background: linear-gradient(90deg, #FFD700, #FF9933);
+  background: linear-gradient(90deg, #E6B800, #FF9400);
   position: absolute;
   bottom: -10px;
   left: 0;
 }
+
 
 /* 🟠 Event Date Box */
 .event-box {
@@ -553,15 +566,16 @@
 }
 
 .event-date {
-  background: linear-gradient(135deg, #ffcc00, #ff9933);
+  background: linear-gradient(135deg, #FFD700, #DAA520);
   color: #000;
   padding: 1rem;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 14px rgba(218, 165, 32, 0.2);
   min-width: 75px;
   animation: bounceIn 0.6s ease-in-out;
 }
+
 
 .event-day {
   font-size: 1.8rem;
@@ -609,13 +623,14 @@
 
 /* 🖼️ Gallery Promo */
 .gallery-promo {
-  background: linear-gradient(135deg, #fff2d5, #D04A4D);
+  background: linear-gradient(120deg, #FFCF40, #C75C1F, #ffffff);
   border-radius: 20px;
   padding: 3rem 2rem;
-  box-shadow: 0 12px 28px rgba(255, 204, 0, 0.2);
+  box-shadow: 0 12px 28px rgba(255, 207, 64, 0.25);
   margin-bottom: 3rem;
   text-align: center;
 }
+
 
 .gallery-promo h2 {
   font-size: 1.7rem;
@@ -625,7 +640,7 @@
 }
 
 .gallery-btn {
-  background: linear-gradient(to right, #FFD700, #FF9933);
+  background: linear-gradient(to right, #E6B800, #FF9400);
   color: #000;
   font-weight: 700;
   padding: 0.75rem 2rem;
@@ -634,8 +649,15 @@
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
   border: none;
-  box-shadow: 0 8px 18px rgba(255, 165, 0, 0.3);
+  box-shadow: 0 8px 18px rgba(255, 180, 0, 0.3);
 }
+
+.gallery-btn:hover {
+  background: #000;
+  color: #E6B800;
+  border: 1px solid #E6B800;
+}
+
 
 .gallery-btn:hover {
   background: #000;
@@ -645,12 +667,13 @@
 
 /* 🗺️ Nearby Places */
 .nearby-places {
-  background: linear-gradient(to right, #D04A4D, #f9e1b8);
+  background: linear-gradient(145deg, #FFB300, #ffffff);
   padding: 3rem 2rem;
   border-radius: 20px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
   margin-bottom: 3rem;
 }
+
 
 .nearby-places .section-title {
   font-size: 1.8rem;
