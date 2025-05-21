@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HeroSection from '../components/HeroSection';
+// import HeroSection from '../components/HeroSection';
 import './Darshan.css';
 
 const videos = [
@@ -28,11 +28,11 @@ export default function Darshan() {
 
   return (
     <div>
-      <HeroSection
+      {/* <HeroSection
         title="Live Darshan"
         description="Shree Somnath Trust"
         backgroundImage="../img/temple-image/pexels-thash-26920038.jpg"
-      />
+      /> */}
 
       <div className="darshan-main">
         <div className="darshan-sidebar">

@@ -19,7 +19,7 @@ const BookingPage = () => {
   const roomOptions = [
     {
       id: 1,
-      name: "Sagar Darshan",
+      name: "Sagar Darshan Guest House",
       price: 6000,
       images: ["../img/room-img/sagar-darshan/IMG_6891.JPG"],
       facilities: ["Auditorium", "Premier Hall", "Restaurant"],
@@ -51,7 +51,7 @@ const BookingPage = () => {
       available: false,
       images: ["../img/room-img/Leelavati Guest House/IMG_7097.JPG"],
       facilities: ["Reception Hall", "Free WiFi", "Banquet Hall"],
-       roomTypes: [
+      roomTypes: [
         {
           type: "4 Bed Suite Room",
           price: 6000,
@@ -79,7 +79,7 @@ const BookingPage = () => {
       available: false,
       images: ["../img/room-img/Maheshwari Guest House/IMG_7033.JPG"],
       facilities: ["Temple View", "Attached Bathroom", "Breakfast"],
-       roomTypes: [
+      roomTypes: [
         {
           type: "4 Bed Suite Room",
           price: 6000,
@@ -157,28 +157,36 @@ const BookingPage = () => {
             className="form-control"
             placeholder="Male"
             min="0"
-            onChange={(e) => setGuests({ ...guests, male: Number(e.target.value) })}
+            onChange={(e) =>
+              setGuests({ ...guests, male: Number(e.target.value) })
+            }
           />
           <input
             type="number"
             className="form-control"
             placeholder="Female"
             min="0"
-            onChange={(e) => setGuests({ ...guests, female: Number(e.target.value) })}
+            onChange={(e) =>
+              setGuests({ ...guests, female: Number(e.target.value) })
+            }
           />
           <input
             type="number"
             className="form-control"
             placeholder="Child"
             min="0"
-            onChange={(e) => setGuests({ ...guests, child: Number(e.target.value) })}
+            onChange={(e) =>
+              setGuests({ ...guests, child: Number(e.target.value) })
+            }
           />
           <input
             type="number"
             className="form-control"
             placeholder="Rooms"
             min="1"
-            onChange={(e) => setGuests({ ...guests, rooms: Number(e.target.value) })}
+            onChange={(e) =>
+              setGuests({ ...guests, rooms: Number(e.target.value) })
+            }
           />
           <button className="btn btn-danger">Search</button>
         </div>
@@ -191,78 +199,100 @@ const BookingPage = () => {
             return (
               <div key={room.id} className="col-md-4 mb-4 room-card-col">
                 <div className="card room-card shadow">
-                  <img src={room.images[0]} className="card-img-top" alt={room.name} />
+                  <img
+                    src={room.images[0]}
+                    className="card-img-top"
+                    alt={room.name}
+                  />
                   <div className="card-body">
                     <h5 className="card-title">{room.name}</h5>
 
                     {hasSubRooms ? (
                       <div>
-                       {room.roomTypes.map((subRoom, idx) => {
-  const isAvailable = subRoom.available > 0;
-  return (
-    <label
-      key={idx}
-      className="subroom-label hover-container"
-      style={{ cursor: isAvailable ? "pointer" : "not-allowed" }}
-    >
-      <input
-        type="radio"
-        name={`selectedRoom-${room.id}`}
-        disabled={!isAvailable}
-        onChange={() =>
-          setRoomSelected({
-            ...room,
-            selectedSubRoom: subRoom,
-            price: subRoom.price,
-            name: `${room.name} - ${subRoom.type}`,
-          })
-        }
-        checked={
-          roomSelected &&
-          roomSelected.id === room.id &&
-          roomSelected.selectedSubRoom?.type === subRoom.type
-        }
-      />
-      <span style={{ flex: 1, marginLeft: "10px" }}>{subRoom.type}</span>
-      <span style={{ width: "80px", textAlign: "right" }}>
-        ₹{subRoom.price.toLocaleString()}
-      </span>
-      <span
-        style={{
-          marginLeft: "15px",
-          color: isAvailable ? "#3e1f0d" : "red",
-          fontWeight: "600",
-          width: "90px",
-          textAlign: "right",
-        }}
-      >
-        {isAvailable ? `${subRoom.available} Rooms` : "No Rooms"}
-      </span>
+                        {room.roomTypes.map((subRoom, idx) => {
+                          const isAvailable = subRoom.available > 0;
+                          return (
+                            <label
+                              key={idx}
+                              className="subroom-label hover-container"
+                              style={{
+                                cursor: isAvailable ? "pointer" : "not-allowed",
+                              }}
+                            >
+                              <input
+                                type="radio"
+                                name={`selectedRoom-${room.id}`}
+                                disabled={!isAvailable}
+                                onChange={() =>
+                                  setRoomSelected({
+                                    ...room,
+                                    selectedSubRoom: subRoom,
+                                    price: subRoom.price,
+                                    name: `${room.name} - ${subRoom.type}`,
+                                  })
+                                }
+                                checked={
+                                  roomSelected &&
+                                  roomSelected.id === room.id &&
+                                  roomSelected.selectedSubRoom?.type ===
+                                    subRoom.type
+                                }
+                              />
 
-      {/* Hover image */}
-      <img
-        src={subRoom.image}
-        alt={subRoom.type}
-        className="hover-image"
-      />
-    </label>
-  );
-})}
 
-                          
+                              
+<div style={{ marginLeft: "10px", lineHeight: "1.6", width: "100%" }}>
+  {/* Room Type */}
+  <div style={{ marginBottom: "4px" }}>{subRoom.type}</div>
+
+  {/* Price and Availability */}
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      width: "100%",
+    }}
+  >
+    <div>₹{subRoom.price.toLocaleString()}</div>
+    <div style={{ color: isAvailable ? "green" : "red", fontWeight: "600" }}>
+      {isAvailable ? `${subRoom.available} Rooms` : "No Rooms"}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                              {/* Hover image */}
+                              <img
+                                src={subRoom.image}
+                                alt={subRoom.type}
+                                className="hover-image"
+                              />
+                            </label>
+                          );
+                        })}
                       </div>
                     ) : (
                       <>
-                        <p className="card-text">₹{room.price.toLocaleString()}</p>
+                        <p className="card-text">
+                          ₹{room.price.toLocaleString()}
+                        </p>
                         {!room.available && (
-                          <p style={{ color: "red", fontWeight: "bold" }}>No Rooms</p>
+                          <p style={{ color: "red", fontWeight: "bold" }}>
+                            No Rooms
+                          </p>
                         )}
                         <div className="d-flex justify-content-between align-items-center gap-2">
                           <input
                             type="radio"
                             name="selectedRoom"
                             onChange={() => setRoomSelected(room)}
-                            checked={roomSelected && roomSelected.id === room.id}
+                            checked={
+                              roomSelected && roomSelected.id === room.id
+                            }
                           />
                           <button
                             className="book-now-btn btn btn-sm btn-primary"
@@ -295,7 +325,9 @@ const BookingPage = () => {
                       <div className="d-flex justify-content-between align-items-center gap-2 mt-3">
                         <button
                           disabled={
-                            !roomSelected || roomSelected.id !== room.id || !roomSelected.selectedSubRoom
+                            !roomSelected ||
+                            roomSelected.id !== room.id ||
+                            !roomSelected.selectedSubRoom
                           }
                           className="book-now-btn btn btn-sm btn-primary"
                           onClick={() => {
@@ -326,7 +358,9 @@ const BookingPage = () => {
             <h4 className="mb-3">Complete Your Booking</h4>
             <p>
               <strong>Room:</strong>{" "}
-              {roomSelected.selectedSubRoom ? roomSelected.name : roomSelected.name}
+              {roomSelected.selectedSubRoom
+                ? roomSelected.name
+                : roomSelected.name}
             </p>
             <p>
               <strong>Price:</strong> ₹

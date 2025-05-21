@@ -13,20 +13,23 @@
   "volunteer": "Volunteer Program",
   "volunteer_desc": "Join hands with us to serve the divine and the community.",
   "read_more": "Read More",
-  "we_are_prayer": "We are a Prayer",
-  "we_are_hindu": "We are Hindus who believe in Ram",
-  "prayer_section_desc": "Lorem ipsum dolor sit amet...",
+  
+  "we_are_prayer": "We Are Devotees of Mahadev",
+  "we_are_hindu": "We are Sanatanis who worship the Supreme Being, Lord Shiva, at the sacred Jyotirlinga – Somnath.",
+  "prayer_section_desc": "Located on the serene coast of Gujarat, Somnath is not just a temple — it's a spiritual journey into timeless devotion. With the blessings of Mahadev, we stand united in prayer, tradition, and service to Dharma.",
   "mission_title": "Our Mission & Vision",
-  "celebrate_with_us": "Celebrate with Us",
-  "mission_desc": "Lorem ipsum dolor sit amet...",
+  "celebrate_with_us": "Preserving the divine legacy of Somnath, one prayer at a time.",
+  "mission_desc": "Our mission is to promote Sanatan Dharma, serve every devotee with love and care, and preserve the sacred traditions of this Jyotirlinga. Our vision is to make Somnath a spiritual hub for global pilgrims seeking peace, blessings, and awakening.",
+  
   "sermon": "Watch Our Sermon",
-  "sermon_desc": "Join us to listen to the latest sermon.",
+  "sermon_desc": "Listen to the voices of wisdom and surrender. Join our live and recorded spiritual pravachans (sermons) by revered saints and acharyas, sharing ancient wisdom and the power of devotion to Shiva.",
   "festival": "Join Our Festival",
-  "festival_desc": "Celebrate the divine with our upcoming event.",
+  "festival_desc": "Celebrate divinity in its purest form. Be a part of temple festivals like Rudrabhishek Mahotsav, Deep Daan, and Sawan Somvar. Bring your family and experience the divine joy of collective prayer.",
   "volunteer_card": "Volunteer With Us",
-  "volunteer_card_desc": "Be a part of our spiritual mission.",
+  "volunteer_card_desc": "Serve Mahadev. Serve humanity. Offer your time and energy in Seva (selfless service) – be it managing events, guiding pilgrims, or assisting the elderly. Become a part of our spiritual mission.",
   "daily_prayers": "Daily Prayers",
-  "daily_prayers_desc": "Tune in for daily blessings and mantras.",
+  "daily_prayers_desc": "Soothing mantras. Sacred vibrations. Join our morning and evening aartis, Rudra Abhishek, and daily shlokas, streamed live. Let the chants of Om Namah Shivaya bring peace to your home.",
+  
   "experience_serenity": "Experience Spiritual Serenity",
   "temple_intro": "Join us at the holy Shree Somnath Temple...",
   "contact_us": "Contact Us"
@@ -73,15 +76,15 @@
 
   
   "eventsAndDarshan": "📅 Events & Darshan",
-  "specialPoojaEvent": "Special Pooja Event",
-  "specialPoojaDesc": "🌟 May 12, 2025 - Special Event at Somnath Temple",
-  "liveDarshan": "Live Darshan",
+  "specialPoojaEvent": "🌟 Special Rudrabhishek Pooja",
+  "specialPoojaDesc": "Experience the powerful Rudrabhishek on May 12, 2025, at Somnath Mandir with Vedic chants and holy offerings.",
+  "liveDarshan": "Live Darshan - Stay connected with Somnath – anytime, anywhere.",
   "galleryHeading": "📸 Want To See What's New About Somnath Temple?",
   "goToGallery": "Go To Gallery",
   "nearbyHeading": "🗺️ Nearby Visiting Places",
-  "bhalkaTirth": "Bhalka Tirth",
-  "dehotsargTirth": "Dehotsarg Tirth",
-  "prachiTirth": "Prachi Tirth",
+  "bhalkaTirth": "Bhalka Tirth – Where Lord Krishna left his earthly form.",
+  "dehotsargTirth": "Dehotsarg Tirth – The place of Krishna’s cremation rituals",
+  "prachiTirth": "Prachi Tirth – An ancient pilgrimage site with ties to Puranic legends",
 
 
 

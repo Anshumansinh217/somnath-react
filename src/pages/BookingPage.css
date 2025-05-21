@@ -178,7 +178,7 @@
 .hover-container {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: right;
   margin: 10px 0;
   padding: 8px 12px;
   border-radius: 8px;

@@ -513,7 +513,15 @@
 /* ,,,,,,,,,,,,, */
 /* 🌄 Full Page Light Divine Gradient */
 .home-wrapper-gradient {
-  background: linear-gradient(to bottom, #fff1e0, #fefaf4, #ffffff);
+  background: linear-gradient(to bottom,#fce3c0);
+
+
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-wrapper-gradient-2 {
+  background: linear-gradient(to bottom,#fff1e0,#ffffff);
 
 
   padding: 3rem 1rem;

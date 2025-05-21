@@ -186,6 +186,46 @@ const { t } = useLanguage();
         </div>
       </section>
 
+
+
+            {/* event */}
+
+            <div className="home-wrapper-gradient">
+        <div className="home-content-wrapper">
+          {/* 📅 Events & Darshan Block */}
+          <section className="event-darshan-section mb-5 p-4 rounded shadow">
+            <h2 className="section-title mb-4">{t("eventsAndDarshan")}</h2>
+            <div className="row align-items-center">
+              <div className="col-md-6 mb-3 mb-md-0">
+                <div className="event-box">
+                  <div className="event-date">
+                    <div className="event-day">12</div>
+                    <div className="event-month">May</div>
+                  </div>
+                  <div className="event-info">
+                    <h5 className="event-title">{t("specialPoojaEvent")}</h5>
+                    <p className="event-desc">{t("specialPoojaDesc")}</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6 text-center">
+                <h5 className="live-darshan-title">{t("liveDarshan")}</h5>
+                <img
+                  src="../img/temple-image/somnath-temple-last-day-of-shravan-1210x642-1.jpg"
+                  alt={t("liveDarshan")}
+                  className="img-fluid rounded darshan-image"
+                />
+              </div>
+            </div>
+          </section>
+
+        
+        </div>
+      </div>
+
+
+
+
       <section className="prayer-section text-center py-5 position-relative">
         <div className="container">
           <h2 className="fw-bold display-5 mb-3">{t("we_are_prayer")}</h2>
@@ -265,34 +305,10 @@ const { t } = useLanguage();
 
       {/* ------------- */}
 
-      <div className="home-wrapper-gradient">
+      <div className="home-wrapper-gradient-2">
         <div className="home-content-wrapper">
           {/* 📅 Events & Darshan Block */}
-          <section className="event-darshan-section mb-5 p-4 rounded shadow">
-            <h2 className="section-title mb-4">{t("eventsAndDarshan")}</h2>
-            <div className="row align-items-center">
-              <div className="col-md-6 mb-3 mb-md-0">
-                <div className="event-box">
-                  <div className="event-date">
-                    <div className="event-day">12</div>
-                    <div className="event-month">May</div>
-                  </div>
-                  <div className="event-info">
-                    <h5 className="event-title">{t("specialPoojaEvent")}</h5>
-                    <p className="event-desc">{t("specialPoojaDesc")}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 text-center">
-                <h5 className="live-darshan-title">{t("liveDarshan")}</h5>
-                <img
-                  src="../img/temple-image/somnath-temple-last-day-of-shravan-1210x642-1.jpg"
-                  alt={t("liveDarshan")}
-                  className="img-fluid rounded darshan-image"
-                />
-              </div>
-            </div>
-          </section>
+         
 
           {/* 📸 Gallery Promotion Section */}
           <section className="gallery-promo text-center p-5 rounded shadow mb-5">
