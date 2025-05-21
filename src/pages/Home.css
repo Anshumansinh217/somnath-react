@@ -453,10 +453,10 @@
 }
 
 .somnath-card {
-  background: linear-gradient(145deg, #fff5e1, #ffecd0);
-  color: #570303;
+  background: linear-gradient(145deg, #2f2f2f, #1c1c1c); /* Dark Shivling look */
+  color: #fff;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 50% 50% 0 0;
   padding: 1.8rem 1.2rem;
   width: 160px;
   min-height: 160px;
@@ -464,10 +464,41 @@
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   position: relative;
   overflow: hidden;
 }
+
+/* Base circle (yoni base) */
+.somnath-card::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 40px;
+  background: radial-gradient(circle, #444 30%, #222 90%);
+  border-radius: 50%;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Optional: 3 white stripes on Shivling
+.somnath-card::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 4px;
+  background: white;
+  box-shadow:
+    0 10px white,
+    0 20px white;   
+  border-radius: 2px;
+} */
+
 
 .somnath-card:hover {
   transform: translateY(-6px);

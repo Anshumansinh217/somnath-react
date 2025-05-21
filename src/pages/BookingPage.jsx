@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
 
+
 import "./BookingPage.css";
 
 const BookingPage = () => {
@@ -240,7 +241,7 @@ const BookingPage = () => {
                               />
 
 
-                              
+
 <div style={{ marginLeft: "10px", lineHeight: "1.6", width: "100%" }}>
   {/* Room Type */}
   <div style={{ marginBottom: "4px" }}>{subRoom.type}</div>
